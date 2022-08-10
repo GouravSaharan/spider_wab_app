@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E8E8DF"
+    android:background="#0e122b"
     tools:context=".ConversionsCheckFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:id="@+id/speedConst"
             android:layout_height="120dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -22,69 +24,91 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.807">
 
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Speed"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.173" />
+
             <EditText
                 android:id="@+id/speedoutputcheck"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:gravity="center"
                 android:hint=" Km/h"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.786" />
 
             <EditText
                 android:id="@+id/speedInputcheck"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint=" m/sec"
+                android:gravity="center"
+                android:hint=" Met/sec"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.009"
+                app:layout_constraintHorizontal_bias="0.051"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.746" />
 
             <TextView
                 android:id="@+id/textViewspeed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="="
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
 
                 app:layout_constraintEnd_toStartOf="@+id/speedoutputcheck"
                 app:layout_constraintStart_toEndOf="@+id/speedInputcheck"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.17" />
+                app:layout_constraintVertical_bias="0.72" />
 
             <Button
                 android:id="@+id/speedCheckBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#026C04"
                 android:text="check"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintHorizontal_bias="0.397"
 
 
                 app:layout_constraintStart_toEndOf="@+id/speedoutputcheck"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.777" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/weightConst"
             android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -92,68 +116,91 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.572">
 
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.173" />
+
             <EditText
                 android:id="@+id/weightOutputcheck"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:gravity="center"
                 android:hint="Pound"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.906" />
 
             <EditText
                 android:id="@+id/weightInputcheck"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:gravity="center"
                 android:hint="Kg"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.009"
+                app:layout_constraintHorizontal_bias="0.006"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.906" />
 
             <TextView
                 android:id="@+id/textViewweight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="="
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/weightOutputcheck"
 
+                app:layout_constraintHorizontal_bias="0.62"
                 app:layout_constraintStart_toEndOf="@+id/weightInputcheck"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.17" />
+                app:layout_constraintVertical_bias="0.825" />
 
             <Button
                 android:id="@+id/weightCheckBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#026C04"
                 android:text="check"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintHorizontal_bias="0.426"
 
                 app:layout_constraintStart_toEndOf="@+id/weightOutputcheck"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.888" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:id="@+id/lengthConst"
             android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -161,134 +208,179 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.339">
 
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Length"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.173" />
+
             <EditText
                 android:id="@+id/lengthOutputcheck"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="meter"
+                android:gravity="center"
+                android:hint="Meter"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/black"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.853" />
 
             <EditText
                 android:id="@+id/lengthInputcheck"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="cm"
+                android:gravity="center"
+                android:hint=" Cm"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/black"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.009"
+                app:layout_constraintHorizontal_bias="0.012"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.88" />
 
             <TextView
                 android:id="@+id/textViewlength"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="="
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/lengthOutputcheck"
 
+                app:layout_constraintHorizontal_bias="0.607"
                 app:layout_constraintStart_toEndOf="@+id/lengthInputcheck"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.17" />
+                app:layout_constraintVertical_bias="0.813" />
 
             <Button
                 android:id="@+id/lengthCheckBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#026C04"
                 android:text="check"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintHorizontal_bias="0.397"
 
 
                 app:layout_constraintStart_toEndOf="@+id/lengthOutputcheck"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.819" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
             android:id="@+id/tempConst"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="120dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.106">
+            app:layout_constraintVertical_bias="0.111">
 
             <EditText
                 android:id="@+id/tempOutputcheck"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Temp F"
+                android:gravity="center"
+                android:hint=" Fahrenheit "
                 android:inputType="textPersonName"
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.786" />
 
             <EditText
                 android:id="@+id/tempInputcheck"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Temp °C"
+                android:gravity="center"
+                android:hint=" °C"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/black"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.009"
+                app:layout_constraintHorizontal_bias="0.022"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.786" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="="
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
 
 
                 app:layout_constraintEnd_toStartOf="@+id/tempOutputcheck"
+                app:layout_constraintHorizontal_bias="0.44"
                 app:layout_constraintStart_toEndOf="@+id/tempInputcheck"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.17" />
+                app:layout_constraintVertical_bias="0.744" />
 
             <Button
                 android:id="@+id/tempCheckBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#026C04"
                 android:text="check"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintHorizontal_bias="0.397"
 
 
                 app:layout_constraintStart_toEndOf="@+id/tempOutputcheck"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192" />
+                app:layout_constraintVertical_bias="0.777" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.173" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

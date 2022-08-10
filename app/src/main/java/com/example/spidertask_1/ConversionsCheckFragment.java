@@ -172,6 +172,45 @@ public class ConversionsCheckFragment extends Fragment {
             }
         });
 
+        speedCheckBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(speedInputCheck.getText().toString().isEmpty()  || speedOutputCheck.getText().toString().isEmpty()){
+
+
+                    if(speedInputCheck.getText().toString().isEmpty()){
+                        speedInputCheck.setError("enter value");
+                    }
+                    else if(speedOutputCheck.getText().toString().isEmpty()){
+                        speedOutputCheck.setError("enter value");
+                    }
+                    else{
+                        speedOutputCheck.setError("enter value");
+                        speedInputCheck.setError("enter value");
+
+                    }
+                }
+                else{
+                    Float input,output;
+                    input = (Float.valueOf(speedInputCheck.getText().toString().trim()));
+                    output = Float.valueOf((float) (Double.valueOf(weightOutputCheck.getText().toString().trim())*3.6));
+
+                    if(checkCondation(input,output)){
+
+                        String green="#03D832";
+                        speedConst.setBackgroundColor(Color.parseColor(green));
+
+
+                    }
+                    else{
+                        String red="#EC2107";
+                        speedConst.setBackgroundColor(Color.parseColor(red));
+                        speedOutputCheck.setError(String.valueOf( input*3.6));
+                    }
+                }
+            }
+        });
+
 
 
         return view ;
